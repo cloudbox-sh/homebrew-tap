@@ -5,21 +5,21 @@
 class Statuspulse < Formula
   desc "StatusPulse CLI — hosted status pages from the terminal"
   homepage "https://statuspulse.cloudbox.sh"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.1/statuspulse_0.0.1_darwin_x86_64.tar.gz"
-      sha256 "bc79eac9028db057851b62714bae4fb6b3a45949356a434d15391fd1967d6e3d"
+      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.2/statuspulse_0.0.2_darwin_x86_64.tar.gz"
+      sha256 "270f1fd8b00f596d1104aacb777adcaea5156649d1a9508a29e5cc3f04a00e8a"
 
       define_method(:install) do
         bin.install "statuspulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.1/statuspulse_0.0.1_darwin_arm64.tar.gz"
-      sha256 "4a4f555f1773993fbf0fd243518bc18831e8e1da3d336131b502ca582ab55b5b"
+      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.2/statuspulse_0.0.2_darwin_arm64.tar.gz"
+      sha256 "05752649d19073c76630d0c0362352c199c24cea9356dd02efbdf5a7e249873d"
 
       define_method(:install) do
         bin.install "statuspulse"
@@ -29,15 +29,15 @@ class Statuspulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.1/statuspulse_0.0.1_linux_x86_64.tar.gz"
-      sha256 "2b19e23b83811371892c4ac7de52f6e81e817b55d5b17c11d36106dd8629203b"
+      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.2/statuspulse_0.0.2_linux_x86_64.tar.gz"
+      sha256 "15899190025d97d6dcf295aaa021cc76456b67c83dabfbbeb5a27351dd015201"
       define_method(:install) do
         bin.install "statuspulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.1/statuspulse_0.0.1_linux_arm64.tar.gz"
-      sha256 "1cd99ce84f600c60fcb397f3aee3a6a9742e0206646d732873b2aa4e6fd78df2"
+      url "https://github.com/cloudbox-sh/statuspulse/releases/download/v0.0.2/statuspulse_0.0.2_linux_arm64.tar.gz"
+      sha256 "a677d399f6324ef3c87ec5e836605f69fb8091e768223cfc00d391f9ceea0188"
       define_method(:install) do
         bin.install "statuspulse"
       end
