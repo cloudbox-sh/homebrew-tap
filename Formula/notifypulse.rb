@@ -5,21 +5,21 @@
 class Notifypulse < Formula
   desc "Notifypulse CLI — one-API notification relay from the terminal"
   homepage "https://notifypulse.cloudbox.sh"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.3/notifypulse_0.0.3_darwin_x86_64.tar.gz"
-      sha256 "9cde9c1e1ab62b4921c5736fcc62d89d0f0cf59114bb49273db15291397516fd"
+      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.4/notifypulse_0.0.4_darwin_x86_64.tar.gz"
+      sha256 "4f65e00495eaab70918f49f4422787a984c3620d5c7c36526380b7d82000b3d4"
 
       define_method(:install) do
         bin.install "notifypulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.3/notifypulse_0.0.3_darwin_arm64.tar.gz"
-      sha256 "e658a35f2eee228fa93bd83cabbdb5beafdfa4826d2ef2d5881b92add000253a"
+      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.4/notifypulse_0.0.4_darwin_arm64.tar.gz"
+      sha256 "f00ab6b7cdbd3ee38677efd57c54db041b505a6f64654051293a40e02da97dd7"
 
       define_method(:install) do
         bin.install "notifypulse"
@@ -29,15 +29,15 @@ class Notifypulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.3/notifypulse_0.0.3_linux_x86_64.tar.gz"
-      sha256 "d907c02b02231eb6e9e663e9f9130890eabf257be59472bb4856faa84c64b095"
+      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.4/notifypulse_0.0.4_linux_x86_64.tar.gz"
+      sha256 "ff2bd1e6004c9ab85410b0fe697338f4382cfe678d8bf36a124b768ad9ca3eeb"
       define_method(:install) do
         bin.install "notifypulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.3/notifypulse_0.0.3_linux_arm64.tar.gz"
-      sha256 "ff0bb2aa06c2ca7b8379d92aa681e92a6b9d7f407be89eab4abd1cdc8100f707"
+      url "https://github.com/cloudbox-sh/notifypulse/releases/download/v0.0.4/notifypulse_0.0.4_linux_arm64.tar.gz"
+      sha256 "2e4d1fe6cc78172b2288493fae47d2246c681cd23dbee800a13d75e9f1882b83"
       define_method(:install) do
         bin.install "notifypulse"
       end
